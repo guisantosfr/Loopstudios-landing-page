@@ -1,6 +1,52 @@
+.footer {
+  background-color: $black;
+  text-align: center;
+  padding: 2rem 0;
+
+  &__logo {
+    width: 40%;
+  }
+
+  &__links {
+    margin: 2rem 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  &__link {
+    margin: 1rem 0;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+
+    width: 50%;
+    margin: 0 auto;
+
+    ion-icon {
+      color: $white;
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    color: $darkGray;
+    margin: 1.5rem 0;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: $darkGray;
 
   a {
     color: hsl(228, 45%, 44%);

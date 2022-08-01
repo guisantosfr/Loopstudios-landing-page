@@ -124,9 +124,57 @@ section {
   font-size: 110%;
 }
 
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer__logo {
+  width: 40%;
+}
+
+.footer__links {
+  margin: 2rem 0;
+}
+
+.footer__links li {
+  list-style-type: none;
+}
+
+.footer__link {
+  margin: 1rem 0;
+}
+
+.footer__link a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footer__icons ion-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer p {
+  color: #8c8c8c;
+  margin: 1.5rem 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #8c8c8c;
 }
 
 .attribution a {
