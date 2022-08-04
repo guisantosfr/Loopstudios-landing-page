@@ -26,7 +26,7 @@ img {
 }
 
 section {
-  margin-top: 5rem;
+  margin-top: 6rem;
   text-align: center;
 }
 
@@ -69,7 +69,7 @@ section {
 .header__title {
   color: white;
   border: 1px solid white;
-  padding: 1.5rem;
+  padding: 1.53rem;
   margin-top: 4rem;
 }
 
@@ -85,7 +85,7 @@ section {
 }
 
 .about__title {
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 1.5rem 0;
 }
 
 .about__description {
@@ -143,7 +143,7 @@ section {
 }
 
 .footer__link {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .footer__link a {
@@ -158,7 +158,7 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 50%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .footer__icons ion-icon {

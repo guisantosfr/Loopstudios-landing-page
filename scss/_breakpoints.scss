@@ -1,0 +1,9 @@
+$breakpoints: (
+  "small": 500px,
+);
+
+@mixin small {
+  @media(min-width: map-get($breakpoints, "small")) {
+    @content;
+  }
+}
