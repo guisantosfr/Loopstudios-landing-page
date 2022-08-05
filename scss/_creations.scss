@@ -1,19 +1,57 @@
 .card {
   &__name {
     color: $white;
-    font-size: 1.75rem;
-
+    font-size: 1.7rem;
     text-align: left;
-    width: 45%;
 
     position: relative;
     top: 110px;
-    padding-left: 1.75rem;
+    left: 25px;
+
+    @include small {
+      top: 150px;
+    }
+
+    @include medium {
+      top: -100px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &--mobile {
+    @include medium {
+      display: none;
+    }
+
+  }
+
+  &--desktop {
+    display: none;
+
+    @include medium {
+      display: inline-block;
+    }
+
   }
 }
 
 .creations {
   margin-bottom: 5rem;
+
+  &__title {
+    @include medium {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__cards {
+    @include medium {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 
   &__cta {
     width: 50%;
