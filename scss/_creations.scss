@@ -5,48 +5,46 @@
     text-align: left;
 
     position: relative;
-    top: 110px;
-    left: 25px;
+    top: 7.25rem;
+    left: 2rem;
 
     @include small {
-      top: 150px;
+      top: 8.5rem;
     }
 
     @include medium {
-      top: -100px;
-      padding: 0;
-      margin: 0;
+      top: 11rem;
     }
   }
 
   &--mobile {
-    @include medium {
+    @include large {
       display: none;
     }
-
   }
 
   &--desktop {
     display: none;
 
-    @include medium {
+    @include large {
       display: inline-block;
     }
 
+    .card__name {
+      @include large {
+        top: -6rem;
+        left: 3rem;
+        font-size: 2rem;
+      }
+    }
   }
 }
 
 .creations {
   margin-bottom: 6rem;
 
-  &__title {
-    @include medium {
-      margin-bottom: 2rem;
-    }
-  }
-
   &__cards {
-    @include medium {
+    @include large {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;

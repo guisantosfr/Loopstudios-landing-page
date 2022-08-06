@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 15px;
   font-family: 'Alata', sans-serif;
@@ -13,10 +17,11 @@ h2,
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 
   @include small {
     font-size: 2.5rem;
