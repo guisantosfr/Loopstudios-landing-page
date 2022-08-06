@@ -43,6 +43,16 @@
 .creations {
   margin-bottom: 6rem;
 
+  &__top {
+    @include large {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 2rem;
+    }
+  }
+
   &__cards {
     @include large {
       display: flex;
@@ -52,7 +62,8 @@
   }
 
   &__cta {
-    width: 50%;
+    width: 40%;
+    max-width: 250px;
     padding: 1rem;
     margin: 2rem auto;
     border: 1px solid $black;
@@ -63,6 +74,27 @@
       letter-spacing: 5px;
       color: $black;
       font-size: 110%;
+    }
+  }
+}
+
+.btn {
+  &-mobile {
+    @include large {
+      display: none;
+    }
+
+  }
+
+  &-desktop {
+    display: none;
+
+    @include large {
+      display: inline-block;
+
+      width: 25%;
+      padding: .75rem;
+      margin: 0;
     }
 
   }
