@@ -5,6 +5,14 @@
 
   &__logo {
     width: 40%;
+
+    @include small {
+      width: 35%;
+    }
+
+    @include medium {
+      width: 30%;
+    }
   }
 
   &__links {

@@ -1,7 +1,8 @@
 $breakpoints: (
   "small": 450px,
   "medium": 600px,
-  "large": 700px
+  "large": 700px,
+  "extra-large": 850px
 );
 
 @mixin small {
@@ -18,6 +19,12 @@ $breakpoints: (
 
 @mixin large {
   @media(min-width: map-get($breakpoints, "large")) {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media(min-width: map-get($breakpoints, "extra-large")) {
     @content;
   }
 }

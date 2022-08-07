@@ -42,6 +42,10 @@ section {
   text-align: center;
 }
 
+a {
+  font-size: 1.1rem;
+}
+
 .header {
   background-image: url("../images/mobile/image-hero.jpg");
   background-size: cover;
@@ -80,8 +84,33 @@ section {
   margin-top: 7px;
 }
 
+@media (min-width: 850px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
 .header__links {
   display: none;
+}
+
+.header__links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+}
+
+@media (min-width: 850px) {
+  .header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .header__title {
@@ -258,6 +287,18 @@ section {
 
 .footer__logo {
   width: 40%;
+}
+
+@media (min-width: 450px) {
+  .footer__logo {
+    width: 35%;
+  }
+}
+
+@media (min-width: 600px) {
+  .footer__logo {
+    width: 30%;
+  }
 }
 
 .footer__links {

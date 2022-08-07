@@ -28,10 +28,27 @@
         margin-top: 7px;
       }
     }
+
+    @include extra-large {
+      display: none;
+    }
   }
 
   &__links {
     display: none;
+
+    a {
+      text-decoration: none;
+      color: $white;
+
+      margin: 0 1rem;
+    }
+
+    @include extra-large {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
   &__title {
