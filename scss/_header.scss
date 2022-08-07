@@ -1,6 +1,11 @@
 .header {
   background-image: url('../images/mobile/image-hero.jpg');
+  background-size: cover;
   height: 100vh;
+
+  @include large {
+    background-image: url('../images/desktop/image-hero.jpg');
+  }
 
   &__nav {
     padding: 3rem .5rem;
@@ -26,7 +31,6 @@
   }
 
   &__links {
-    /* HIDE FOR MOBILE */
     display: none;
   }
 
@@ -34,10 +38,11 @@
     color: $white;
     border: 1px solid $white;
     padding: 1.25rem .5rem 1.25rem 1.25rem;
-    margin-top: 4rem;
+    margin-top: 8rem;
 
     @include medium {
       max-width: 500px;
+      margin-top: 10rem;
     }
 
     @include large {
