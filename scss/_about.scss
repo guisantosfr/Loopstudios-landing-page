@@ -1,8 +1,14 @@
 .about {
   &__image {
-    width: 90%;
+    width: 80%;
+    max-width: 500px;
     display: block;
     margin: auto;
+
+
+    @include medium {
+      width: 70%;
+    }
   }
 
   &__title {

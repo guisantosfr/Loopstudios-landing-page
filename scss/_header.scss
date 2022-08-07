@@ -55,15 +55,15 @@
     color: $white;
     border: 1px solid $white;
     padding: 1.25rem .5rem 1.25rem 1.25rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 
     @include medium {
-      max-width: 500px;
-      margin-top: 10rem;
+      margin-top: 4rem;
+      max-width: 550px;
     }
 
-    @include large {
-      max-width: 550px;
+    @include extra-large {
+      max-width: 650px;
     }
 
     h1 {
@@ -75,6 +75,10 @@
 
       @include medium {
         font-size: 4rem;
+      }
+
+      @include extra-large {
+        font-size: 5rem;
       }
 
     }
