@@ -1,13 +1,30 @@
 .about {
+
+  //test
+  @include desktop {
+    position: relative;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
   &__image {
     width: 80%;
-    max-width: 500px;
     display: block;
     margin: auto;
 
+    @include desktop {
+      margin: 0;
+    }
+  }
 
-    @include medium {
-      width: 70%;
+  &__text {
+    @include desktop {
+      position: absolute;
+      top: 175px;
+      left: 50%;
+      padding: 1rem;
+      max-width: 640px;
+      background: $white;
     }
   }
 

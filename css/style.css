@@ -155,16 +155,34 @@ a {
   }
 }
 
+@media (min-width: 1000px) {
+  .about {
+    position: relative;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .about__image {
   width: 80%;
-  max-width: 500px;
   display: block;
   margin: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .about__image {
-    width: 70%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about__text {
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    padding: 1rem;
+    max-width: 640px;
+    background: white;
   }
 }
 
