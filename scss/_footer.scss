@@ -3,20 +3,37 @@
   text-align: center;
   padding: 4rem 0;
 
+  @include desktop {
+    padding: 3rem 0;
+  }
+
+  .container {
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    @include desktop {
+      text-align: left;
+    }
+  }
+
   &__logo {
     width: 40%;
-
-    @include small {
-      width: 35%;
-    }
-
-    @include medium {
-      width: 30%;
-    }
   }
 
   &__links {
     margin: 3rem 0;
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 0;
+    }
 
     li {
       list-style-type: none;
@@ -25,6 +42,10 @@
 
   &__link {
     margin: 1.5rem 0;
+
+    @include desktop {
+      margin-right: 1.5rem;
+    }
 
     a {
       text-decoration: none;
@@ -39,9 +60,19 @@
     width: 50%;
     margin: 0 auto;
 
+    @include desktop {
+      margin: 0;
+      width: 100%;
+      justify-content: flex-end;
+    }
+
     ion-icon {
       color: $white;
       font-size: 2rem;
+
+      @include desktop {
+        margin-left: 1rem;
+      }
     }
   }
 

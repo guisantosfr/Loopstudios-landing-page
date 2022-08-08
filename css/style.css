@@ -46,12 +46,6 @@ a {
   font-size: 1.1rem;
 }
 
-@media (min-width: 850px) {
-  a {
-    font-size: 1.25rem;
-  }
-}
-
 .header {
   background-image: url("../images/mobile/image-hero.jpg");
   background-size: cover;
@@ -304,24 +298,50 @@ a {
   padding: 4rem 0;
 }
 
+@media (min-width: 1000px) {
+  .footer {
+    padding: 3rem 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer__left {
+    text-align: left;
+  }
+}
+
 .footer__logo {
   width: 40%;
 }
 
-@media (min-width: 450px) {
-  .footer__logo {
-    width: 35%;
-  }
-}
-
-@media (min-width: 600px) {
-  .footer__logo {
-    width: 30%;
-  }
-}
-
 .footer__links {
   margin: 3rem 0;
+}
+
+@media (min-width: 1000px) {
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .footer__links li {
@@ -330,6 +350,12 @@ a {
 
 .footer__link {
   margin: 1.5rem 0;
+}
+
+@media (min-width: 1000px) {
+  .footer__link {
+    margin-right: 1.5rem;
+  }
 }
 
 .footer__link a {
@@ -347,9 +373,25 @@ a {
   margin: 0 auto;
 }
 
+@media (min-width: 1000px) {
+  .footer__icons {
+    margin: 0;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .footer__icons ion-icon {
   color: white;
   font-size: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__icons ion-icon {
+    margin-left: 1rem;
+  }
 }
 
 .footer p {

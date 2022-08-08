@@ -40,8 +40,4 @@ section {
 
 a {
   font-size: 1.1rem;
-
-  @include extra-large {
-    font-size: 1.25rem;
-  }
 }

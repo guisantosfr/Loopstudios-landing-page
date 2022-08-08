@@ -2,7 +2,8 @@ $breakpoints: (
   "small": 450px,
   "medium": 600px,
   "large": 700px,
-  "extra-large": 850px
+  "extra-large": 850px,
+  "desktop": 1000px
 );
 
 @mixin small {
@@ -25,6 +26,12 @@ $breakpoints: (
 
 @mixin extra-large {
   @media(min-width: map-get($breakpoints, "extra-large")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width: map-get($breakpoints, "desktop")) {
     @content;
   }
 }
