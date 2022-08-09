@@ -79,6 +79,10 @@ a {
   height: 4px;
   border-radius: 5px;
   background: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform-origin: 4px 2px;
+          transform-origin: 4px 2px;
 }
 
 .header__hamburger div:not(:first-child) {
@@ -89,6 +93,20 @@ a {
   .header__hamburger {
     display: none;
   }
+}
+
+.header__hamburger.open > div:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__hamburger.open > div:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger.open > div:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__links {

@@ -23,6 +23,8 @@
       height: 4px;
       border-radius: 5px;
       background: $white;
+      transition: all .3s ease-in-out;
+      transform-origin: 4px 2px;
 
       &:not(:first-child) {
         margin-top: 7px;
@@ -31,6 +33,20 @@
 
     @include extra-large {
       display: none;
+    }
+
+    &.open {
+      >div:first-child {
+        transform: rotate(45deg);
+      }
+
+      >div:nth-child(2) {
+        opacity: 0;
+      }
+
+      >div:last-child {
+        transform: rotate(-45deg);
+      }
     }
   }
 
