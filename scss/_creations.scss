@@ -37,6 +37,7 @@
         font-size: 2rem;
       }
     }
+
   }
 }
 
@@ -89,6 +90,17 @@
 
   &-desktop {
     display: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $black;
+    font-size: 110%;
+
+    &:hover {
+      background: $black;
+      color: $white;
+    }
 
     @include large {
       display: inline-block;

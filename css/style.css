@@ -44,6 +44,7 @@ section {
 
 a {
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .header {
@@ -98,6 +99,21 @@ a {
   text-decoration: none;
   color: white;
   margin: 0 1rem;
+  position: relative;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.header__links a:hover::before {
+  background: white;
 }
 
 @media (min-width: 850px) {
@@ -299,6 +315,17 @@ a {
 
 .btn-desktop {
   display: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: black;
+  font-size: 110%;
+}
+
+.btn-desktop:hover {
+  background: black;
+  color: white;
 }
 
 @media (min-width: 700px) {
@@ -366,6 +393,24 @@ a {
   list-style-type: none;
 }
 
+.footer__links a {
+  position: relative;
+}
+
+.footer__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.footer__links a:hover::before {
+  background: white;
+}
+
 .footer__link {
   margin: 1.5rem 0;
 }
@@ -399,6 +444,25 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+
+.footer__icons a {
+  position: relative;
+}
+
+.footer__icons a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  left: 25px;
+  right: 0;
+  bottom: -10px;
+}
+
+.footer__icons a:hover::before {
+  background: white;
 }
 
 .footer__icons ion-icon {

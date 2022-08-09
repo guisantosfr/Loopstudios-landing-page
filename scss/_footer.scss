@@ -38,6 +38,26 @@
     li {
       list-style-type: none;
     }
+
+    a {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+      }
+
+      &:hover {
+        &::before {
+          background: $white;
+        }
+      }
+    }
   }
 
   &__link {
@@ -64,6 +84,27 @@
       margin: 0;
       width: 100%;
       justify-content: flex-end;
+    }
+
+    a {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 15px;
+        left: 25px;
+        right: 0;
+        bottom: -10px;
+      }
+
+      &:hover {
+        &::before {
+          background: $white;
+        }
+      }
     }
 
     ion-icon {
