@@ -1,5 +1,7 @@
 # Frontend Mentor - Loopstudios landing page solution
 
+![loopstudios](https://github.com/guisantosfr/Loopstudios-landing-page/assets/32960040/38212a79-e97f-4c67-b861-abd97856d733)
+
 This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
